@@ -15,7 +15,7 @@ class RosbagConan(ConanFile):
 
     short_paths = True
     settings = "os", "compiler", "build_type", "arch"
-    generators = "cmake"
+    generators = "cmake", "virtualrunenv"
 
     requires = (
         "opencv/[>=3.4.0]@camposs/stable",
